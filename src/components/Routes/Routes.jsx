@@ -6,11 +6,13 @@ import User from "../User/User";
 import UserDetails from "../UserDetails/UserDetails";
 import Posts from "../Posts/Posts";
 import PostsDetails from "../PostsDetails/PostsDetails";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
     {
       path: "/",
       element: <Home/>,
+      errorElement: <ErrorPage/>,
       children: [
         {
             path: "/about",
