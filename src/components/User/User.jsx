@@ -7,7 +7,7 @@ const User = () => {
   return (
     <div>User
         <h2>This is user data: {users.length}</h2>
-        <div>
+        <div className="grid grid-cols-2 gap-6">
             {
                 users.map(user => <UsersDetains key={user.id} user={user}/> )
             }
